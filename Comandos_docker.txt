@@ -1,0 +1,23 @@
+docker run <imagem> --> Baixa e roda a imagem
+
+docker ps --> Lista as imagens 
+
+docker create <imagem> --> Cria a imagem e devolve o id
+
+docker start -a <id do container> --> Roda o container o -a é para imprimir 
+
+docker system prune --> remove os containers 
+
+docker logs <id do container> --> imprime o log do container
+
+docker stop <id do container> --> espera até 10 segundos para o container terminar suas atividades
+
+docker kill <id do container> --> mata o container na hora
+
+docker exec -it <id do container> <comando> --> Roda um comando dentro do container, a flag it exibe o terminal 
+
+docker exec -it <id do container> sh --> abre o terminal shell do container
+
+docker build -t <nome da imagem a ser criada> . --> Cria uma imagem definindo um label para ele
+
+docker run -p <porta usada na maquina local>:<porta que está sendo ouvida no container> <id do container> --> roda o container indicando qual porta será redirecionado para da maquina para o container
